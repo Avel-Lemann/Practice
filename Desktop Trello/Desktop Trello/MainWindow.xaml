@@ -1,0 +1,26 @@
+﻿<Window x:Class="Desktop_Trello.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop_Trello"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+
+
+    <Grid Background="#8f97fc">
+        <TextBlock HorizontalAlignment="Left" Height="69" Margin="10,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="22"><Run Text="Trello"/><LineBreak/><Run Text="   desktop"/></TextBlock>
+        <Button x:Name="NewBoard" HorizontalAlignment="Left" Height="70" Margin="0,99,0,0" VerticalAlignment="Top" Width="238" FontSize="18" Click="NewBoard_Click" Template="{DynamicResource ButtonNewBoard}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Knopka1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Notification" HorizontalAlignment="Left" Height="51" Margin="10,217,0,0" VerticalAlignment="Top" Width="191" FontSize="18" Template="{StaticResource ButtonNewBoard}"/>
+        <Button x:Name="Favorites" Content="Избранные" HorizontalAlignment="Left" Height="51" Margin="10,293,0,0" VerticalAlignment="Top" Width="191" FontSize="18"/>
+        <Button x:Name="Frequently_Visited" Content="Часто посещаемые" HorizontalAlignment="Left" Height="64" Margin="10,360,0,0" VerticalAlignment="Top" Width="191" FontSize="18" Click="Frequently_Visited_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="333" FontSize="20"><Run Language="ru-ru" Text="Добро пожаловать, "/><Run Text="username!"/></TextBlock>
+    </Grid>
+</Window>
+
+

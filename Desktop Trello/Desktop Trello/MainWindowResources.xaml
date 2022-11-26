@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+        <ControlTemplate x:Key="ButtonNewBoard" TargetType="Button">
+            <Border CornerRadius="0 25 25 0">
+                <Border.Background>
+                <ImageBrush ImageSource="{TemplateBinding Content}"/>
+            </Border.Background>
+                <ContentPresenter RecognizesAccessKey="True"></ContentPresenter>
+            </Border>
+        </ControlTemplate>
+    
+    
+</ResourceDictionary>
