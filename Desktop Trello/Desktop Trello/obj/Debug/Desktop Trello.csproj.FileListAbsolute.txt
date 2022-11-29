@@ -18,3 +18,23 @@ C:\Users\Stas\source\repos\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu
 C:\Users\Stas\source\repos\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu.baml
 C:\Users\Stas\source\repos\Desktop Trello\Desktop Trello\obj\Debug\MainWindowResources.baml
 C:\Users\Stas\source\repos\Desktop Trello\Desktop Trello\obj\Debug\App.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.exe.config
+D:\Практика\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.exe
+D:\Практика\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.pdb
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.AssemblyReference.cache
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.SuggestedBindingRedirects.cache
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindowResources.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindow.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\App.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello_MarkupCompile.cache
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello_MarkupCompile.lref
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\App.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindow.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.g.resources
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop_Trello.Properties.Resources.resources
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.GenerateResource.cache
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.CoreCompileInputs.cache
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.exe
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.pdb

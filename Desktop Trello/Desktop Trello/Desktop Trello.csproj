@@ -110,7 +110,22 @@
     <Resource Include="Resources\Knopka1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Knopka1.png" />
+    <Resource Include="Resources\Knopka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Knopka3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Knopka4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

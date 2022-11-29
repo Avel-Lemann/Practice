@@ -27,11 +27,6 @@ namespace Desktop_Trello
            
         }
 
-        private void Butt1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Frequently_Visited_Click(object sender, RoutedEventArgs e)
         {
 
@@ -45,6 +40,11 @@ namespace Desktop_Trello
                 CrMenu.Show();
             }
             else CrMenu.Activate();
+        }
+
+        private void Logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Не тыкай!", "Чо ты тыкаешь?", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

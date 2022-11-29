@@ -5,21 +5,92 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Desktop_Trello"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800">
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Trello Desktop">
 
 
-
-    <Grid Background="#8f97fc">
-        <TextBlock HorizontalAlignment="Left" Height="69" Margin="10,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="22"><Run Text="Trello"/><LineBreak/><Run Text="   desktop"/></TextBlock>
-        <Button x:Name="NewBoard" HorizontalAlignment="Left" Height="70" Margin="0,99,0,0" VerticalAlignment="Top" Width="238" FontSize="18" Click="NewBoard_Click" Template="{DynamicResource ButtonNewBoard}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Knopka1.png"/>
-            </Button.Background>
+    <Grid Background="#8F97FC">
+        <Button x:Name="NewBoard" HorizontalAlignment="Left" Height="58" Margin="-14,128,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Click="NewBoard_Click" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Height="49" Source="Resources/Knopka1.png" Stretch="Fill" Width="171"/>
         </Button>
-        <Button x:Name="Notification" HorizontalAlignment="Left" Height="51" Margin="10,217,0,0" VerticalAlignment="Top" Width="191" FontSize="18" Template="{StaticResource ButtonNewBoard}"/>
-        <Button x:Name="Favorites" Content="Избранные" HorizontalAlignment="Left" Height="51" Margin="10,293,0,0" VerticalAlignment="Top" Width="191" FontSize="18"/>
-        <Button x:Name="Frequently_Visited" Content="Часто посещаемые" HorizontalAlignment="Left" Height="64" Margin="10,360,0,0" VerticalAlignment="Top" Width="191" FontSize="18" Click="Frequently_Visited_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="388,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="333" FontSize="20"><Run Language="ru-ru" Text="Добро пожаловать, "/><Run Text="username!"/></TextBlock>
+        <Button x:Name="Notifications" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,217,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Height="55" Source="Resources/Knopka2.png" Stretch="Fill" Width="191"/>
+        </Button>
+        <Button x:Name="Favorites" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,297,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Height="49" Source="Resources/Knopka3.png" Stretch="Fill" Width="196"/>
+        </Button>
+        <Button x:Name="Frequently_Visited" HorizontalAlignment="Left" Height="59" Margin="-14,373,0,0" VerticalAlignment="Top" Width="228" FontSize="18" Click="Frequently_Visited_Click" FontFamily="Comic Sans MS" Cursor="Hand">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Height="46" Source="Resources/Knopka4.png" Stretch="Fill" Width="197"/>
+        </Button>
+        <Button x:Name="Logo" HorizontalAlignment="Left" Height="59" Margin="-14,26,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="No" Click="Logo_Click">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,0,0,0" Margin="14,-11,-14,11">
+                        <Border.Background>Transparent</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Height="94" Source="Resources/Logo.png" Stretch="Fill" Width="197"/>
+        </Button>
+        <Grid Background="#F7EDEE" Margin="246,0,0,0">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="295" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Добро пожаловать, "/><Run Text="username!"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="13,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="128" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Поиск досок"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="10,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="262" FontSize="20" FontFamily="Comic Sans MS"><Run Text="Сохраненные запросы"/><Run Language="ru-ru" Text=":"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="10,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="262" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Часто посещаемые доски:"/></TextBlock>
+            <Button x:Name="Search" HorizontalAlignment="Left" Margin="226,144,0,0" VerticalAlignment="Top" Height="51" Width="51" Cursor="Hand">
+                <Button.Template >
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="0,0,0,0" Margin="12,-16,-13,16">
+                            <Border.Background>Transparent</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Image Height="49" Source="Resources/Lupa.png" Stretch="Fill" Width="48" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>
+        </Grid>
     </Grid>
 </Window>
 
