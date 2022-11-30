@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
         Closing="NotificationWindow_Closing"
-        Title="NotificationWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="NotificationWindow" Height="450" Width="400" ResizeMode="NoResize">
+    <Grid Background="#d9dbee">
+        <Border BorderBrush="White" BorderThickness="9"/>
+        <Label Content="Уведомления" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28"/>
+        <GridSplitter HorizontalAlignment="Center" Height="208" Margin="0,-58,0,0" VerticalAlignment="Top" Width="2"  RenderTransformOrigin="0.5,0.5" Background="Black">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Label Content="На твой телефон пришло новое сообщение, &#xD;&#xA;посмотри, вдруг там что-то важное" HorizontalAlignment="Left" Margin="27,91,0,0" VerticalAlignment="Top" Height="71" Width="269" FontFamily="Comic Sans MS"/>
     </Grid>
 </Window>

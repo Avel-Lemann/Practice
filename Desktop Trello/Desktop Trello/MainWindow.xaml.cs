@@ -24,6 +24,8 @@ namespace Desktop_Trello
         public static NotificationWindow notifications;
         public static FavoritesWindow favorites;
         public static Frequently_Visited_Window freq_Visit;
+        public static Paschalka pasc;
+        public static User user;
         public MainWindow()
         {
             InitializeComponent();
@@ -45,7 +47,12 @@ namespace Desktop_Trello
 
         private void Logo_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Не тыкай!", "Чо ты тыкаешь?", MessageBoxButton.OK, MessageBoxImage.Error);
+            if (pasc == null)
+            {
+                pasc = new Paschalka();
+                pasc.ShowDialog();
+            }
+            MessageBox.Show("Вы нашли Стаса", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void Notifications_Click(object sender, RoutedEventArgs e)
@@ -84,6 +91,19 @@ namespace Desktop_Trello
             else
             {
                 freq_Visit.Activate();
+            }
+        }
+
+        private void User_Click(object sender, RoutedEventArgs e)
+        {
+            if (user == null)
+            {
+                user = new User();
+                user.Show();
+            }
+            else
+            {
+                user.Activate();
             }
         }
     }

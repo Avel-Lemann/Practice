@@ -64,3 +64,13 @@ C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\De
 C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\FavoritesWindow.baml
 C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.g.cs
 C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\FavoritesWindow.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\NotificationWindow.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\FavoritesWindow.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\NotificationWindow.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.g.cs
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.baml
