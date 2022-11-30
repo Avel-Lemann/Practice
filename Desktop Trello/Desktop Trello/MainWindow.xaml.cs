@@ -21,30 +21,70 @@ namespace Desktop_Trello
     public partial class MainWindow : Window
     {
         public static Creation_Menu CrMenu;
+        public static NotificationWindow notifications;
+        public static FavoritesWindow favorites;
+        public static Frequently_Visited_Window freq_Visit;
         public MainWindow()
         {
             InitializeComponent();
-           
         }
 
-        private void Frequently_Visited_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
+        
 
         private void NewBoard_Click(object sender, RoutedEventArgs e)
         {
+            
+
             if (CrMenu == null)
             {
                 CrMenu = new Creation_Menu();
-                CrMenu.Show();
+                CrMenu.ShowDialog();
             }
-            else CrMenu.Activate();
         }
 
         private void Logo_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Не тыкай!", "Чо ты тыкаешь?", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private void Notifications_Click(object sender, RoutedEventArgs e)
+        {
+            if (notifications == null)
+            {
+                notifications = new NotificationWindow();
+                notifications.Show();
+            }
+            else
+            {
+                notifications.Activate();
+            }
+        }
+
+        private void Favorites_Click(object sender, RoutedEventArgs e)
+        {
+            if (favorites == null)
+            {
+                favorites = new FavoritesWindow();
+                favorites.Show();
+            }
+            else
+            {
+                favorites.Activate();
+            }
+        }
+
+        private void Frequently_Visited_Click(object sender, RoutedEventArgs e)
+        {
+            if (freq_Visit == null)
+            {
+                freq_Visit = new Frequently_Visited_Window();
+                freq_Visit.Show();
+            }
+            else
+            {
+                freq_Visit.Activate();
+            }
         }
     }
 }

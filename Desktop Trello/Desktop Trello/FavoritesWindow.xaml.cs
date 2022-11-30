@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace Desktop_Trello
 {
     /// <summary>
-    /// Логика взаимодействия для Creation_Menu.xaml
+    /// Логика взаимодействия для FavoritesWindow.xaml
     /// </summary>
-    public partial class Creation_Menu : Window
+    public partial class FavoritesWindow : Window
     {
-        public Creation_Menu()
+        public FavoritesWindow()
         {
             InitializeComponent();
         }
 
-        public void Creation_Menu_Closing(object sender, CancelEventArgs e)
+        private void FavoritesWindow_Closing(object sender, CancelEventArgs e)
         {
-            MainWindow.CrMenu = null;
+            MainWindow.favorites = null;
         }
     }
 }

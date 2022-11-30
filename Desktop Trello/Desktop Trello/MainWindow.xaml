@@ -21,7 +21,7 @@
             </Button.Template>
             <Image Height="49" Source="Resources/Knopka1.png" Stretch="Fill" Width="171"/>
         </Button>
-        <Button x:Name="Notifications" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,217,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand">
+        <Button x:Name="Notifications" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,217,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Notifications_Click">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
@@ -32,7 +32,7 @@
             </Button.Template>
             <Image Height="55" Source="Resources/Knopka2.png" Stretch="Fill" Width="191"/>
         </Button>
-        <Button x:Name="Favorites" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,297,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand">
+        <Button x:Name="Favorites" Background="White" HorizontalAlignment="Left" Height="59" Margin="-14,297,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Favorites_Click">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">
@@ -43,7 +43,7 @@
             </Button.Template>
             <Image Height="49" Source="Resources/Knopka3.png" Stretch="Fill" Width="196"/>
         </Button>
-        <Button x:Name="Frequently_Visited" HorizontalAlignment="Left" Height="59" Margin="-14,373,0,0" VerticalAlignment="Top" Width="228" FontSize="18" Click="Frequently_Visited_Click" FontFamily="Comic Sans MS" Cursor="Hand">
+        <Button x:Name="Frequently_Visited" HorizontalAlignment="Left" Height="59" Margin="-14,373,0,0" VerticalAlignment="Top" Width="228" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Frequently_Visited_Click">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,50,50,0" Margin="13,-16,-13,16">

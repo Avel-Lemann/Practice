@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace Desktop_Trello
 {
     /// <summary>
-    /// Логика взаимодействия для Creation_Menu.xaml
+    /// Логика взаимодействия для NotificationWindow.xaml
     /// </summary>
-    public partial class Creation_Menu : Window
+    public partial class NotificationWindow : Window
     {
-        public Creation_Menu()
+        public NotificationWindow()
         {
             InitializeComponent();
         }
 
-        public void Creation_Menu_Closing(object sender, CancelEventArgs e)
+        private void NotificationWindow_Closing(object sender, CancelEventArgs e)
         {
-            MainWindow.CrMenu = null;
+            MainWindow.notifications = null;
         }
     }
 }

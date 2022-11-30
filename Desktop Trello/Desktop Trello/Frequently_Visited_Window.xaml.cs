@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace Desktop_Trello
 {
     /// <summary>
-    /// Логика взаимодействия для Creation_Menu.xaml
+    /// Логика взаимодействия для Frequently_Visited_Window.xaml
     /// </summary>
-    public partial class Creation_Menu : Window
+    public partial class Frequently_Visited_Window : Window
     {
-        public Creation_Menu()
+        public Frequently_Visited_Window()
         {
             InitializeComponent();
         }
 
-        public void Creation_Menu_Closing(object sender, CancelEventArgs e)
+        private void Freq_Visit_Closing(object sender, CancelEventArgs e)
         {
-            MainWindow.CrMenu = null;
+            MainWindow.freq_Visit = null;
         }
     }
 }

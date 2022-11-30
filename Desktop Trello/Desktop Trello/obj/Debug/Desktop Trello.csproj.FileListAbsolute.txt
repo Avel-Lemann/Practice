@@ -38,3 +38,29 @@ D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Tre
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.CoreCompileInputs.cache
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.exe
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.pdb
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.exe.config
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.exe
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\bin\Debug\Desktop Trello.pdb
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.AssemblyReference.cache
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.SuggestedBindingRedirects.cache
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindowResources.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindow.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\App.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello_MarkupCompile.cache
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello_MarkupCompile.lref
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\App.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Creation_Menu.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\MainWindow.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.g.resources
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop_Trello.Properties.Resources.resources
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.GenerateResource.cache
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.csproj.CoreCompileInputs.cache
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.exe
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Desktop Trello.pdb
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\NotificationWindow.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\NotificationWindow.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\FavoritesWindow.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\FavoritesWindow.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Frequently_Visited_Window.baml

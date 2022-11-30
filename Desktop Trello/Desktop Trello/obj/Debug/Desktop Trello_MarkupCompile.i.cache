@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\
 Desktop_Trello
 none
 false
 DEBUG;TRACE
-D:\Практика\Practice\Desktop Trello\Desktop Trello\App.xaml
-3244332816
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\App.xaml
+627883485
 
-71702918148
+10849228031
 14-1656046352
-Creation_Menu.xaml;MainWindow.xaml;MainWindowResources.xaml;
+Creation_Menu.xaml;FavoritesWindow.xaml;Frequently_Visited_Window.xaml;MainWindow.xaml;MainWindowResources.xaml;NotificationWindow.xaml;
 
 True
 
