@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
+        Closing="User_Window_Closing"
         Height="450" Width="400" ResizeMode="NoResize">
 
     <Grid Background="#d9dbee">

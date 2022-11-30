@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,18 +15,13 @@ using System.Windows.Shapes;
 namespace Desktop_Trello
 {
     /// <summary>
-    /// Логика взаимодействия для User.xaml
+    /// Логика взаимодействия для Board_Window.xaml
     /// </summary>
-    public partial class User : Window
+    public partial class Board_Window : Window
     {
-        public User()
+        public Board_Window()
         {
             InitializeComponent();
-        }
-
-        public void User_Window_Closing(object sender, CancelEventArgs e)
-        {
-            MainWindow.user = null;
         }
     }
 }

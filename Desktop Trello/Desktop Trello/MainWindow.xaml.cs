@@ -26,6 +26,7 @@ namespace Desktop_Trello
         public static Frequently_Visited_Window freq_Visit;
         public static Paschalka pasc;
         public static User user;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace Desktop_Trello
 
         private void NewBoard_Click(object sender, RoutedEventArgs e)
         {
+
             
 
             if (CrMenu == null)
@@ -99,7 +101,7 @@ namespace Desktop_Trello
             if (user == null)
             {
                 user = new User();
-                user.Show();
+                user.ShowDialog();
             }
             else
             {

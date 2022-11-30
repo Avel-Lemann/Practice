@@ -74,3 +74,9 @@ D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.g
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.baml
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.g.cs
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Paschalka.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\User.baml
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_Window.g.cs
+C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_Window.baml
