@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
         Title="Board_Window" Height="1080" Width="1920" WindowState="Maximized" ResizeMode="NoResize" >
-    <Grid>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
-        <Button x:Name="NewList" Content="Добавить список" Margin="0,74,1520,933" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand">
+    <Grid x:Name="Board_Window_Grid">
+        <TextBox x:Name="BoardName" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
+        <Button x:Name="NewList" Content="Добавить список" Margin="0,74,1520,933" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand" HorizontalAlignment="Right" Width="400" Click="NewList_Click">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
@@ -29,7 +29,7 @@
             </Button.Template>
             <Image Source="Resources/Serdechko_pustoe.png"/>
         </Button>
-        <GroupBox Header="Список" Background="#f7edee" Margin="1452,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="458" Height="607" VerticalAlignment="Top">
+        <GroupBox x:Name="Column" Header="Список" Background="#f7edee" Margin="1452,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="458" Height="607" VerticalAlignment="Top">
             <Button x:Name="NewCard" Content="Добавить карточку" Margin="17,500,146,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >

@@ -21,6 +21,7 @@ namespace Desktop_Trello
     public partial class Creation_Menu : Window
     {
         public int Background_Number = 1;
+        
         public Creation_Menu()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace Desktop_Trello
             
             Board_Window board_Window = new Board_Window();
             board_Window.Title = NameBoard.Text;
+            board_Window.BoardName.Text = NameBoard.Text;
             ImageBrush BackgroundBoardBrush = new ImageBrush();
             if(Background_Number == 1)
             {

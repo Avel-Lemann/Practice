@@ -19,9 +19,19 @@ namespace Desktop_Trello
     /// </summary>
     public partial class Board_Window : Window
     {
+        public GroupBox col;
+
         public Board_Window()
         {
             InitializeComponent();
+        }
+
+        private void NewList_Click(object sender, RoutedEventArgs e)
+        {
+            GetValue(Column);
+            col.Margin = new Thickness(20, 10, 10, 10);
+            
+
         }
     }
 }
