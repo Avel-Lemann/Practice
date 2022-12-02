@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
         Closing="FavoritesWindow_Closing"
-        Title="FavoritesWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="FavoritesWindow" Height="450" Width="450">
+    <Grid Background="#d9dbee">
+        <Label Content="Избранные" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28"/>
+        <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="190"/>
+      
     </Grid>
 </Window>

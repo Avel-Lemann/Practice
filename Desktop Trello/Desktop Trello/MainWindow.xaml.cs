@@ -37,9 +37,6 @@ namespace Desktop_Trello
 
         private void NewBoard_Click(object sender, RoutedEventArgs e)
         {
-
-            
-
             if (CrMenu == null)
             {
                 CrMenu = new Creation_Menu();

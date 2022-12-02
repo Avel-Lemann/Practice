@@ -7,20 +7,10 @@
         mc:Ignorable="d"
         Closing="Creation_Menu_Closing"
         Title="Создание досок" Height="500" Width="400" ResizeMode="NoResize">
-    
+
     <Grid Background="#d9dbee">
         <Border BorderBrush="White" BorderThickness="7"/>
         <Label Content="Создать доску" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28"/>
-        <GridSplitter HorizontalAlignment="Center" Height="208" Margin="0,-58,0,0" VerticalAlignment="Top" Width="2"  RenderTransformOrigin="0.5,0.5" Background="Black">
-            <GridSplitter.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </GridSplitter.RenderTransform>
-        </GridSplitter>
         <Label Content="Фон" FontFamily="Comic Sans MS" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="28" Margin="7,177,0,0"/>
         <Label Content="Заголовок доски" FontFamily="Comic Sans MS" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="28" Margin="10,284,0,0"/>
         <TextBox x:Name="NameBoard" TextWrapping="Wrap" Margin="10,333,76,92" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="20"/>
@@ -68,5 +58,7 @@
             </Button.Template>
             <Image Source="/Resources/Fon3.png" Height="68" Width="104"/>
         </Button>
+        <Image Margin="123,86,123,324" Source="Resources/Dlya_meykera.png" Stretch="Fill"/>
+        <Rectangle HorizontalAlignment="Center" Height="2" Stroke="Black" VerticalAlignment="Top" Width="226" Margin="0,47,0,0"/>
     </Grid>
 </Window>

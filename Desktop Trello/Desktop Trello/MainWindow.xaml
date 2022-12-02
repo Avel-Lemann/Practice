@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Desktop_Trello"
       mc:Ignorable="d" 
-      d:DesignHeight="750" d:DesignWidth="1350"
-      Title="Trello Desktop" Height="750" Width="1350">
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Trello Desktop" Height="1080" Width="1920" WindowState="Maximized">
 
 
     <Grid Background="#8F97FC">
@@ -65,15 +65,15 @@
             </Button.Template>
             <Image Height="94" Source="Resources/Logo.png" Stretch="Fill" Width="197"/>
         </Button>
-        <Grid Background="#F7EDEE" Margin="246,0,0,0" Grid.ColumnSpan="2">
+        <Grid Background="#F7EDEE" Margin="246,0,0,0">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="475" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Добро пожаловать, "/><Run Text="username!"/></TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="13,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="128" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Поиск досок"/></TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="10,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="262" FontSize="20" FontFamily="Comic Sans MS"><Run Text="Сохраненные запросы"/><Run Language="ru-ru" Text=":"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="10,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="262" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Часто посещаемые доски:"/></TextBlock>
-            <Button x:Name="Search" HorizontalAlignment="Left" Margin="226,144,0,0" VerticalAlignment="Top" Height="51" Width="51" Cursor="Hand">
+            <TextBlock HorizontalAlignment="Left" Margin="10,411,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="262" FontSize="20" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Часто посещаемые доски:"/></TextBlock>
+            <Button x:Name="Search" HorizontalAlignment="Left" Margin="270,148,0,0" VerticalAlignment="Top" Height="51" Width="51" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
-                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="0,0,0,0" Margin="12,-16,-13,16">
+                        <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5,5,5,5" Margin="12,-16,-13,16">
                             <Border.Background>Transparent</Border.Background>
                             <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
                         </Border>
@@ -90,7 +90,7 @@
                     </Image.RenderTransform>
                 </Image>
             </Button>
-            <Button x:Name="User" HorizontalAlignment="Left" Margin="986,34,0,0" VerticalAlignment="Top" Width="70" Height="70" Cursor="Hand" BorderBrush="Black" Click="User_Click">
+            <Button x:Name="User" HorizontalAlignment="Left" Margin="1570,34,0,0" VerticalAlignment="Top" Width="70" Height="70" Cursor="Hand" BorderBrush="Black" Click="User_Click">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
                         <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">
@@ -101,6 +101,7 @@
                 </Button.Template>
                 <Image Source="Resources/Yuzer.png"/>
             </Button>
+            <TextBox HorizontalAlignment="Left" Margin="10,140,0,0" Background="Transparent" BorderBrush="Black" BorderThickness="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="35" FontFamily="Comic Sans MS" FontSize="20"/>
         </Grid>
     </Grid>
 </Window>

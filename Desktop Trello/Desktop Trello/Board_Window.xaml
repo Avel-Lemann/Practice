@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
-        Title="Board_Window" Height="450" Width="800">
+        Title="Board_Window" Height="1080" Width="1920" WindowState="Maximized" ResizeMode="NoResize" >
     <Grid>
-        
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
+        <Button x:Name="NewList" Content="Добавить список" Margin="0,74,1520,933" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="Favourite" HorizontalAlignment="Left" Margin="282,22,0,0" VerticalAlignment="Top" Width="52" Height="52" Cursor="Hand" BorderBrush="Black">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">
+                        <Border.Background>Transparent</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Source="Resources/Serdechko_pustoe.png"/>
+        </Button>
+        <GroupBox Header="Список" Background="#f7edee" Margin="1452,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="458" Height="607" VerticalAlignment="Top">
+            <Button x:Name="NewCard" Content="Добавить карточку" Margin="17,500,146,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+                <Button.Template >
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </GroupBox>
     </Grid>
 </Window>
