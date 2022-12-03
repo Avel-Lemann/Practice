@@ -14,50 +14,11 @@
         <Label Content="Фон" FontFamily="Comic Sans MS" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="28" Margin="7,177,0,0"/>
         <Label Content="Заголовок доски" FontFamily="Comic Sans MS" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="28" Margin="10,284,0,0"/>
         <TextBox x:Name="NameBoard" TextWrapping="Wrap" Margin="10,333,76,92" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="20"/>
-        <Button x:Name="Create" Content="Создать" Margin="-4,392,24,10" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand" Click="Create_Click">
-            <Button.Template >
-                <ControlTemplate TargetType="{x:Type Button}" >
-                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
-                        <Border.Background>White</Border.Background>
-                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="Fon1" Margin="0,231,308,191" Background="White" BorderBrush="Black" Cursor="Hand" Click="Fon1_Click">
-            <Image Source="Resources/Fon1.png" Height="68" Width="104"/>
-            <Button.Template >
-                <ControlTemplate TargetType="{x:Type Button}" >
-                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,0,0,0" Margin="14,-11,-36,-2">
-                        <Border.Background>Transparent</Border.Background>
-                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
+        <Button x:Name="Create" Style="{StaticResource Create}"  Click="Create_Click"/>
+        <Button x:Name="Fon1" Style="{StaticResource Fon1}"  Click="Fon1_Click"/>
         <Image x:Name="Preview" Margin="86,54,86,301" Source="Resources/Fon1.png" Stretch="Fill"/>
-        <Button x:Name="Fon2" Margin="133,231,175,191" Background="White" BorderBrush="Black" Cursor="Hand" Click="Fon2_Click">
-            <Button.Template >
-                <ControlTemplate TargetType="{x:Type Button}" >
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="0,0,0,0" Margin="14,-11,-36,-2">
-                        <Border.Background>Transparent</Border.Background>
-                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-            <Image Source="/Resources/Fon2.png" Height="68" Width="104"/>
-        </Button>
-        <Button x:Name="Fon3" Margin="262,231,46,191" Background="White" BorderBrush="Black" Cursor="Hand" Click="Fon3_Click">
-            <Button.Template >
-                <ControlTemplate TargetType="{x:Type Button}" >
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="0,0,0,0" Margin="14,-11,-36,-2">
-                        <Border.Background>Transparent</Border.Background>
-                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-            <Image Source="/Resources/Fon3.png" Height="68" Width="104"/>
-        </Button>
+        <Button x:Name="Fon2" Style="{StaticResource Fon2}" Click="Fon2_Click"/>
+        <Button x:Name="Fon3" Style="{StaticResource Fon3}" Click="Fon3_Click"/>
         <Image Margin="123,86,123,324" Source="Resources/Dlya_meykera.png" Stretch="Fill"/>
         <Rectangle HorizontalAlignment="Center" Height="2" Stroke="Black" VerticalAlignment="Top" Width="226" Margin="0,47,0,0"/>
     </Grid>

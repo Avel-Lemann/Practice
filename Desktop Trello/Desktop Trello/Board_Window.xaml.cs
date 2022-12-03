@@ -28,8 +28,7 @@ namespace Desktop_Trello
 
         private void NewList_Click(object sender, RoutedEventArgs e)
         {
-            GetValue(Column);
-            col.Margin = new Thickness(20, 10, 10, 10);
+           
             
 
         }

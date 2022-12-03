@@ -82,3 +82,5 @@ C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\De
 C:\Users\Стас\Documents\GitHub\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_Window.baml
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_Window.g.cs
 D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_Window.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\Board_WindowRes.baml
+D:\Практика\Practice\Desktop Trello\Desktop Trello\obj\Debug\CrMenuRes.baml

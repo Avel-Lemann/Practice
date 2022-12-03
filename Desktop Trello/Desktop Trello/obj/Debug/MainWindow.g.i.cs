@@ -49,7 +49,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 24 "..\..\MainWindow.xaml"
+        #line 14 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Notifications;
         
@@ -57,7 +57,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 35 "..\..\MainWindow.xaml"
+        #line 15 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Favorites;
         
@@ -65,7 +65,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 46 "..\..\MainWindow.xaml"
+        #line 16 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Frequently_Visited;
         
@@ -73,7 +73,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 57 "..\..\MainWindow.xaml"
+        #line 17 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Logo;
         
@@ -81,7 +81,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 73 "..\..\MainWindow.xaml"
+        #line 23 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Search;
         
@@ -89,7 +89,7 @@ namespace Desktop_Trello {
         #line hidden
         
         
-        #line 93 "..\..\MainWindow.xaml"
+        #line 24 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button User;
         
@@ -138,7 +138,7 @@ namespace Desktop_Trello {
             case 2:
             this.Notifications = ((System.Windows.Controls.Button)(target));
             
-            #line 24 "..\..\MainWindow.xaml"
+            #line 14 "..\..\MainWindow.xaml"
             this.Notifications.Click += new System.Windows.RoutedEventHandler(this.Notifications_Click);
             
             #line default
@@ -147,7 +147,7 @@ namespace Desktop_Trello {
             case 3:
             this.Favorites = ((System.Windows.Controls.Button)(target));
             
-            #line 35 "..\..\MainWindow.xaml"
+            #line 15 "..\..\MainWindow.xaml"
             this.Favorites.Click += new System.Windows.RoutedEventHandler(this.Favorites_Click);
             
             #line default
@@ -156,7 +156,7 @@ namespace Desktop_Trello {
             case 4:
             this.Frequently_Visited = ((System.Windows.Controls.Button)(target));
             
-            #line 46 "..\..\MainWindow.xaml"
+            #line 16 "..\..\MainWindow.xaml"
             this.Frequently_Visited.Click += new System.Windows.RoutedEventHandler(this.Frequently_Visited_Click);
             
             #line default
@@ -165,7 +165,7 @@ namespace Desktop_Trello {
             case 5:
             this.Logo = ((System.Windows.Controls.Button)(target));
             
-            #line 57 "..\..\MainWindow.xaml"
+            #line 17 "..\..\MainWindow.xaml"
             this.Logo.Click += new System.Windows.RoutedEventHandler(this.Logo_Click);
             
             #line default
@@ -177,7 +177,7 @@ namespace Desktop_Trello {
             case 7:
             this.User = ((System.Windows.Controls.Button)(target));
             
-            #line 93 "..\..\MainWindow.xaml"
+            #line 24 "..\..\MainWindow.xaml"
             this.User.Click += new System.Windows.RoutedEventHandler(this.User_Click);
             
             #line default
