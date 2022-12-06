@@ -4,7 +4,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupBox}">
-                    <GroupBox x:Name="Column" Header="Список" Background="#f7edee" Margin="1452,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="458" Height="607" VerticalAlignment="Top">
+                    <GroupBox x:Name="Column" Header="Список" Background="#f7edee" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Center" Width="458" Height="607" VerticalAlignment="Center">
                         <Button x:Name="NewCard" Content="Добавить карточку" Margin="17,500,146,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
                             <Button.Template >
                                 <ControlTemplate TargetType="{x:Type Button}" >

@@ -19,8 +19,6 @@ namespace Desktop_Trello
     /// </summary>
     public partial class Board_Window : Window
     {
-        public GroupBox col;
-
         public Board_Window()
         {
             InitializeComponent();
@@ -28,8 +26,11 @@ namespace Desktop_Trello
 
         private void NewList_Click(object sender, RoutedEventArgs e)
         {
-           
-            
+            GroupBox col = new GroupBox();
+            Board_Window_Grid.Children.Add(col);
+            col.PointToScreen(new Point(col.ActualWidth, col.ActualHeight));
+            col.Style = (Style)Application.Current.FindResource("NewCard");
+
 
         }
     }

@@ -10,6 +10,6 @@
         <TextBox x:Name="BoardName" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
         <Button x:Name="NewList" Style="{StaticResource NewList}" Click="NewList_Click"/>
         <Button x:Name="Favourite" Style="{StaticResource Favourite}"/>
-        <GroupBox x:Name="Column" Style="{StaticResource NewCard}"/>
+        <GroupBox x:Name="Column"  Style="{StaticResource NewCard}" Margin="1424,13,44,445"/>
     </Grid>
 </Window>
