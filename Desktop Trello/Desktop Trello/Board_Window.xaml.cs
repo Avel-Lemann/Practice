@@ -33,5 +33,10 @@ namespace Desktop_Trello
 
 
         }
+
+        private void Favourite_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

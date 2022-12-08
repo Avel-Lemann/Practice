@@ -10,7 +10,7 @@
 
 
     <Grid Background="#8F97FC">
-        <Button x:Name="NewBoard" Style="{StaticResource NewBoard}" Click="NewBoard_Click"/>
+        <Button x:Name="NewBoard" Style="{StaticResource NewBoard}" Click="NewBoard_Click" Margin="0,10,0,0"/>
         <Button x:Name="Notifications" Style="{StaticResource Notifications}"  Click="Notifications_Click"/>
         <Button x:Name="Favorites" Style="{StaticResource Favourites}" Click="Favorites_Click"/>
         <Button x:Name="Frequently_Visited" Style="{StaticResource FreqVis}" Click="Frequently_Visited_Click"/>
