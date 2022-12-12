@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Board_Window" Height="1080" Width="1920" WindowState="Maximized" ResizeMode="NoResize">
     <Grid x:Name="Board_Window_Grid">
-        <TextBox x:Name="BoardName" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
-        <Button x:Name="NewList" Content="Добавить список" Margin="0,81,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" Height="64" Width="403">
+        <TextBox x:Name="ListName" HorizontalAlignment="Left" Margin="18,10,0,0" BorderBrush="Transparent" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Width="264" Height="46" FontFamily="Comic Sans MS" FontSize="24"/>
+        <Button x:Name="NewList" Content="Добавить список" Margin="0,81,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="24" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" Height="64" Width="403" Click="NewList_Click">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
@@ -18,8 +18,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <GroupBox x:Name="Column" Header="Список" Background="#f7edee" Margin="0,10,10,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Right" Width="438" Height="605" VerticalAlignment="Top">
-            <Button x:Name="NewCard" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+        <GroupBox x:Name="Column1" Header="Список" Background="#f7edee" Margin="1202,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Visible">
+            <Button x:Name="NewCard" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29" Click="NewCard_Click">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
                         <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
@@ -40,5 +40,27 @@
             </Button.Template>
             <Image Source="Resources/Serdechko_pustoe.png"/>
         </Button>
+        <GroupBox x:Name="Column2" Header="Список" Background="#f7edee" Margin="734,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Hidden">
+            <Button x:Name="NewCard1" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+                <Button.Template >
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </GroupBox>
+        <GroupBox x:Name="Column3" Header="Список" Background="#f7edee" Margin="266,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Hidden">
+            <Button x:Name="NewCard2" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+                <Button.Template >
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </GroupBox>
     </Grid>
 </Window>

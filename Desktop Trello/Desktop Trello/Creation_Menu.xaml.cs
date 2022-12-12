@@ -34,25 +34,42 @@ namespace Desktop_Trello
 
         private void Create_Click(object sender, RoutedEventArgs e)
         {
-            
-            Board_Window board_Window = new Board_Window();
-            board_Window.Title = NameBoard.Text;
-            board_Window.BoardName.Text = NameBoard.Text;
-            ImageBrush BackgroundBoardBrush = new ImageBrush();
-            if(Background_Number == 1)
+            NameBoard.Text.Trim();
+            if (String.IsNullOrWhiteSpace(NameBoard.Text))
             {
-                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon1.png", UriKind.Absolute));
+                MessageBox.Show("Пожалуйста, введите название для доски.", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            if(Background_Number == 2)
+            else
             {
-                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                if (NameBoard.Text.StartsWith(" "))
+                {
+                    MessageBox.Show("Строка не может начинатся с пробела.", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+                else
+                {
+                    NameBoard.Text.Trim();
+                    Board_Window board_Window = new Board_Window();
+                    board_Window.Title = NameBoard.Text;
+                    ImageBrush BackgroundBoardBrush = new ImageBrush();
+                    if (Background_Number == 1)
+                    {
+                        BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon1.png", UriKind.Absolute));
+                    }
+                    if (Background_Number == 2)
+                    {
+                        BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                    }
+                    if (Background_Number == 3)
+                    {
+                        BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon3.png", UriKind.Absolute));
+                    }
+                    board_Window.Background = BackgroundBoardBrush;
+                    board_Window.Show();
+                    this.Close();
+                }
             }
-            if(Background_Number == 3)
-            {
-                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon3.png", UriKind.Absolute));
-            }
-            board_Window.Background = BackgroundBoardBrush;
-            board_Window.ShowDialog();
         }
 
         private void Fon1_Click(object sender, RoutedEventArgs e)
