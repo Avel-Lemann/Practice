@@ -29,7 +29,7 @@
             </Button.Template>
             <Image Source="Resources/Serdechko_pustoe.png"/>
         </Button>
-        <Border x:Name="Column1" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+        <Border x:Name="Column1" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="620,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Height="600">
             <Button x:Name="NewCard" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
@@ -40,7 +40,7 @@
                 </Button.Template>
             </Button>
         </Border>
-        <Border x:Name="Column2" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+        <Border x:Name="Column2" Background="#f7edee" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="1" Margin="1120,0,0,0" Width="400" Height="600">
             <Button x:Name="NewCard2" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
@@ -51,7 +51,7 @@
                 </Button.Template>
             </Button>
         </Border>
-        <Border x:Name="Column3" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+        <Border x:Name="Column3" Background="#f7edee" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Height="600" Margin="120,0,0,0">
             <Button x:Name="NewCard3" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
