@@ -18,17 +18,6 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <GroupBox x:Name="Column1" Header="Список" Background="#f7edee" Margin="1202,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Visible">
-            <Button x:Name="NewCard" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29" Click="NewCard_Click">
-                <Button.Template >
-                    <ControlTemplate TargetType="{x:Type Button}" >
-                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
-                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-        </GroupBox>
         <Button x:Name="Favourite" HorizontalAlignment="Left" Margin="282,22,0,0" VerticalAlignment="Top" Width="52" Height="52" Cursor="Hand" BorderBrush="Black">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
@@ -40,8 +29,8 @@
             </Button.Template>
             <Image Source="Resources/Serdechko_pustoe.png"/>
         </Button>
-        <GroupBox x:Name="Column2" Header="Список" Background="#f7edee" Margin="734,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Hidden">
-            <Button x:Name="NewCard1" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+        <Border x:Name="Column1" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+            <Button x:Name="NewCard" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
                         <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
@@ -50,9 +39,9 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-        </GroupBox>
-        <GroupBox x:Name="Column3" Header="Список" Background="#f7edee" Margin="266,0,0,0" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" Width="438" Height="605" VerticalAlignment="Center" Visibility="Hidden">
-            <Button x:Name="NewCard2" Content="Добавить карточку" Margin="-7,500,118,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand" Height="29">
+        </Border>
+        <Border x:Name="Column2" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+            <Button x:Name="NewCard2" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
                 <Button.Template >
                     <ControlTemplate TargetType="{x:Type Button}" >
                         <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
@@ -61,6 +50,17 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-        </GroupBox>
+        </Border>
+        <Border x:Name="Column3" Background="#f7edee" BorderBrush="Black" BorderThickness="1" Margin="1336,113,109,338">
+            <Button x:Name="NewCard3" Content="Добавить карточку" Margin="40,564,71,9" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="16" Cursor="Hand">
+                <Button.Template >
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10,10,10,10" Margin="14,-11,-14,11" Background="#FFBFBFBF">
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Border>
     </Grid>
 </Window>
