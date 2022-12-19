@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,20 +27,52 @@ namespace Desktop_Trello
         public static Frequently_Visited_Window freq_Visit;
         public static Paschalka pasc;
         public static User user;
+        public static Board_Window Board_Window;
+
+
+        
 
         public MainWindow()
         {
             InitializeComponent();
+            UploadData();
+            
         }
 
 
-        
+        public void UploadData()
+        {
+            Board1.Content = Properties.Settings.Default.BoardName1;
+            Board2.Content = Properties.Settings.Default.BoardName2;
+            Board3.Content = Properties.Settings.Default.BoardName3;
+
+            if(Properties.Settings.Default.QuantityBoard == 3)
+            {
+                Board1.Visibility = Visibility.Visible;
+                Board2.Visibility = Visibility.Visible;
+                Board3.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (Properties.Settings.Default.QuantityBoard == 2)
+            {
+                Board1.Visibility = Visibility.Visible;
+                Board2.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (Properties.Settings.Default.QuantityBoard == 1)
+            {
+                Board1.Visibility = Visibility.Visible;
+                return;
+            }
+        }
+
 
         private void NewBoard_Click(object sender, RoutedEventArgs e)
         {
             if (CrMenu == null)
             {
                 CrMenu = new Creation_Menu();
+                CrMenu.Owner = this;
                 CrMenu.ShowDialog();
             }
         }
@@ -69,6 +102,7 @@ namespace Desktop_Trello
 
         private void Favorites_Click(object sender, RoutedEventArgs e)
         {
+            Properties.Settings.Default.Reset();
             if (favorites == null)
             {
                 favorites = new FavoritesWindow();
@@ -93,17 +127,33 @@ namespace Desktop_Trello
             }
         }
 
-        private void User_Click(object sender, RoutedEventArgs e)
+       
+
+        private void Board2_Click(object sender, RoutedEventArgs e)
         {
-            if (user == null)
-            {
-                user = new User();
-                user.ShowDialog();
-            }
-            else
-            {
-                user.Activate();
-            }
+            Properties.Settings.Default.CurrentUploadNumberBoard = 2;
+            Board_Window = new Board_Window();
+            Board_Window.Title = Properties.Settings.Default.BoardName2;
+            Board_Window.Show();
+            this.Close();
+        }
+
+        private void Board1_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.CurrentUploadNumberBoard = 1;
+            Board_Window = new Board_Window();
+            Board_Window.Title = Properties.Settings.Default.BoardName1;
+            Board_Window.Show();
+            this.Close();
+        }
+
+        private void Board3_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.CurrentUploadNumberBoard = 1;
+            Board_Window = new Board_Window();
+            Board_Window.Title = Properties.Settings.Default.BoardName1;
+            Board_Window.Show();
+            this.Close();
         }
     }
 }
