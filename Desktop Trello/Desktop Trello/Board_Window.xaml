@@ -50,7 +50,7 @@
             </Button>
             <TextBlock x:Name="Header1" Canvas.Left="10" TextWrapping="Wrap"  Canvas.Top="10" Height="26" Width="188" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20"/>
             <Canvas x:Name="List1Card1" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="67" Visibility="Hidden">
-                <TextBox x:Name="List1Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List1Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList1Card1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList1Card1_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -64,7 +64,7 @@
                 </Button>
             </Canvas>
             <Canvas x:Name="List1Card2" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="221" Visibility="Hidden">
-                <TextBox x:Name="List1Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List1Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList1Card2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList1Card2_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -78,7 +78,7 @@
                 </Button>
             </Canvas>
             <Canvas x:Name="List1Card3" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="375" Visibility="Hidden">
-                <TextBox x:Name="List1Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List1Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList1Card3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList1Card3_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -113,7 +113,7 @@
             </Button>
             <TextBlock x:Name="Header2" Canvas.Left="10" TextWrapping="Wrap"  Canvas.Top="10" Height="26" Width="188" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20"/>
             <Canvas x:Name="List2Card1" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="67" Visibility="Hidden">
-                <TextBox x:Name="List2Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List2Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList2Card1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList2Card1_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -127,7 +127,7 @@
                 </Button>
             </Canvas>
             <Canvas x:Name="List2Card2" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="221" Visibility="Hidden">
-                <TextBox x:Name="List2Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List2Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList2Card2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList2Card2_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -140,8 +140,8 @@
                     <Image Source="Resources/musorka.png"/>
                 </Button>
             </Canvas>
-            <Canvas x:Name="List2Card3" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="375" Visibility="Hidden">
-                <TextBox x:Name="List2Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+            <Canvas x:Name="List2Card3" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="375" Visibility="Hidden" >
+                <TextBox x:Name="List2Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList2Card3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList2Card3_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -175,7 +175,7 @@
                 </Button.Template>
             </Button>
             <Canvas x:Name="List3Card1" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="67" Visibility="Hidden">
-                <TextBox x:Name="List3Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List3Card1Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList3Card1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList3Card1_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -189,7 +189,7 @@
                 </Button>
             </Canvas>
             <Canvas x:Name="List3Card2" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="221" Visibility="Hidden">
-                <TextBox x:Name="List3Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List3Card2Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList3Card2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList3Card2_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -203,7 +203,7 @@
                 </Button>
             </Canvas>
             <Canvas x:Name="List3Card3" Height="154" Width="436" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="375" Visibility="Hidden">
-                <TextBox x:Name="List3Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black"/>
+                <TextBox x:Name="List3Card3Text" Background="White" TextWrapping="Wrap" Width="416" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="96" BorderBrush="Black" FontSize="24" FontFamily="Comic Sans MS"/>
                 <Button x:Name="DeleteList3Card3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="39" Cursor="Hand" BorderBrush="Black" Canvas.Left="370" Canvas.Top="115" Click="DeleteList3Card3_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >

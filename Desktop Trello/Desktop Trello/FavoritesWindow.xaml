@@ -10,6 +10,27 @@
     <Grid Background="#d9dbee">
         <Label Content="Избранные" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28"/>
         <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="190"/>
-      
+        <Button x:Name="FavBoard1" Background="White" HorizontalAlignment="Left" Height="76" Margin="89,111,0,0" VerticalAlignment="Top" Width="245" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Visibility="Hidden" Click="FavBoard1_Click">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="FavBoard2" Background="White" HorizontalAlignment="Left" Height="76" Margin="89,254,0,0" VerticalAlignment="Top" Width="245" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Visibility="Hidden" Click="FavBoard2_Click">
+            <Button.Template >
+                <ControlTemplate TargetType="{x:Type Button}" >
+                    <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
+                        <Border.Background>White</Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
     </Grid>
 </Window>

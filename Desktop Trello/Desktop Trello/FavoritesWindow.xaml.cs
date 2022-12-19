@@ -29,5 +29,15 @@ namespace Desktop_Trello
         {
             MainWindow.favorites = null;
         }
+
+        private void FavBoard1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FavBoard2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
