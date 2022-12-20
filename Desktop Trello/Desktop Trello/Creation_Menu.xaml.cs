@@ -123,7 +123,7 @@ namespace Desktop_Trello
         private void Fon2_Click(object sender, RoutedEventArgs e)
         {
             Background_Number = 2;
-            Preview.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute)));
+            Preview.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute)));
         }
 
         private void Fon3_Click(object sender, RoutedEventArgs e)

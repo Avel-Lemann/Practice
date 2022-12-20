@@ -730,5 +730,65 @@ namespace Desktop_Trello.Properties {
                 this["CurrentUploadNumberBoard"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int MainWindowBackgroundNumber {
+            get {
+                return ((int)(this["MainWindowBackgroundNumber"]));
+            }
+            set {
+                this["MainWindowBackgroundNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FavoriteBoardNumber {
+            get {
+                return ((int)(this["FavoriteBoardNumber"]));
+            }
+            set {
+                this["FavoriteBoardNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FrequentAttendanceBoard1 {
+            get {
+                return ((int)(this["FrequentAttendanceBoard1"]));
+            }
+            set {
+                this["FrequentAttendanceBoard1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FrequentAttendanceBoard2 {
+            get {
+                return ((int)(this["FrequentAttendanceBoard2"]));
+            }
+            set {
+                this["FrequentAttendanceBoard2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FrequentAttendanceBoard3 {
+            get {
+                return ((int)(this["FrequentAttendanceBoard3"]));
+            }
+            set {
+                this["FrequentAttendanceBoard3"] = value;
+            }
+        }
     }
 }

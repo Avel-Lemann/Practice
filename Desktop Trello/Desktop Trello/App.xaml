@@ -7,7 +7,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="MainWindowResources.xaml"/>
-                <ResourceDictionary Source="Board_WindowRes.xaml"/>
                 <ResourceDictionary Source="CrMenuRes.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

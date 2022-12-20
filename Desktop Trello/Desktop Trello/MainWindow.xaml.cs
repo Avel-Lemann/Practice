@@ -53,34 +53,64 @@ namespace Desktop_Trello
                 Board1.Visibility = Visibility.Visible;
                 Board2.Visibility = Visibility.Visible;
                 Board3.Visibility = Visibility.Visible;
-                return;
             }
             else if (Properties.Settings.Default.QuantityBoard == 2)
             {
                 Board1.Visibility = Visibility.Visible;
                 Board2.Visibility = Visibility.Visible;
-                return;
             }
             else if (Properties.Settings.Default.QuantityBoard == 1)
             {
                 Board1.Visibility = Visibility.Visible;
-                return;
             }
 
             if (Properties.Settings.Default.Board1Favorites == true)
-                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
-            else
                 FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            else
+                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
 
             if(Properties.Settings.Default.Board2Favorites == true)
-                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
-            else
                 FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            else
+                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
 
             if (Properties.Settings.Default.Board3Favorites == true)
-                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
-            else
                 FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            else
+                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+
+            if(Properties.Settings.Default.MainWindowBackgroundNumber == 1)
+            {
+                ImageBrush BackgroundBoardBrush = new ImageBrush();
+                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon1.png", UriKind.Absolute));
+                GridBack2.Background = BackgroundBoardBrush;
+            }
+            else if(Properties.Settings.Default.MainWindowBackgroundNumber == 2)
+            {
+                ImageBrush BackgroundBoardBrush = new ImageBrush();
+                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                GridBack2.Background = BackgroundBoardBrush;
+            }
+            else if (Properties.Settings.Default.MainWindowBackgroundNumber == 3)
+            {
+                ImageBrush BackgroundBoardBrush = new ImageBrush();
+                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon3.png", UriKind.Absolute));
+                GridBack2.Background = BackgroundBoardBrush;
+            }
+            else if (Properties.Settings.Default.MainWindowBackgroundNumber == 4)
+            {
+                ImageBrush BackgroundBoardBrush = new ImageBrush();
+                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
+                GridBack2.Background = BackgroundBoardBrush;
+            }
+            else if (Properties.Settings.Default.MainWindowBackgroundNumber >= 5 || Properties.Settings.Default.MainWindowBackgroundNumber <= 0)
+            {
+                ImageBrush BackgroundBoardBrush = new ImageBrush();
+                BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon1.png", UriKind.Absolute));
+                GridBack2.Background = BackgroundBoardBrush;
+                Properties.Settings.Default.MainWindowBackgroundNumber = 1;
+                Properties.Settings.Default.Save();
+            }
         }
 
 
@@ -104,18 +134,7 @@ namespace Desktop_Trello
             MessageBox.Show("Вы нашли Стаса", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        private void Notifications_Click(object sender, RoutedEventArgs e)
-        {
-            if (notifications == null)
-            {
-                notifications = new NotificationWindow();
-                notifications.Show();
-            }
-            else
-            {
-                notifications.Activate();
-            }
-        }
+        
 
         private void Favorites_Click(object sender, RoutedEventArgs e)
         {
@@ -129,15 +148,12 @@ namespace Desktop_Trello
 
         private void Frequently_Visited_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.Reset();
+
             if (freq_Visit == null)
             {
                 freq_Visit = new Frequently_Visited_Window();
-                freq_Visit.Show();
-            }
-            else
-            {
-                freq_Visit.Activate();
+                freq_Visit.Owner = this;
+                freq_Visit.ShowDialog();
             }
         }
 
@@ -163,7 +179,7 @@ namespace Desktop_Trello
 
         private void Board3_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.CurrentUploadNumberBoard = 1;
+            Properties.Settings.Default.CurrentUploadNumberBoard = 3;
             Board_Window = new Board_Window();
             Board_Window.Title = Properties.Settings.Default.BoardName1;
             Board_Window.Show();
@@ -176,11 +192,15 @@ namespace Desktop_Trello
             {
                 Properties.Settings.Default.Board1Favorites = false;
                 FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber--;
+                Properties.Settings.Default.Save();
             }
             else
             {
                 Properties.Settings.Default.Board1Favorites = true;
                 FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber++;
+                Properties.Settings.Default.Save();
             }
         }
 
@@ -190,11 +210,15 @@ namespace Desktop_Trello
             {
                 Properties.Settings.Default.Board2Favorites = false;
                 FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber--;
+                Properties.Settings.Default.Save();
             }
             else
             {
                 Properties.Settings.Default.Board2Favorites = true;
                 FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber++;
+                Properties.Settings.Default.Save();
             }
         }
 
@@ -204,32 +228,54 @@ namespace Desktop_Trello
             {
                 Properties.Settings.Default.Board3Favorites = false;
                 FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber--;
+                Properties.Settings.Default.Save();
             }
             else
             {
                 Properties.Settings.Default.Board3Favorites = true;
                 FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+                Properties.Settings.Default.FavoriteBoardNumber++;
+                Properties.Settings.Default.Save();
             }
         }
 
         private void Fon1_Click(object sender, RoutedEventArgs e)
         {
+            ImageBrush BackgroundBoardBrush = new ImageBrush();
+            BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon1.png", UriKind.Absolute));
+            GridBack2.Background = BackgroundBoardBrush;
+            Properties.Settings.Default.MainWindowBackgroundNumber = 1;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reset();
 
         }
 
         private void Fon2_Click(object sender, RoutedEventArgs e)
         {
-
+            ImageBrush BackgroundBoardBrush = new ImageBrush();
+            BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+            GridBack2.Background = BackgroundBoardBrush;
+            Properties.Settings.Default.MainWindowBackgroundNumber = 2;
+            Properties.Settings.Default.Save();
         }
 
         private void Fon3_Click(object sender, RoutedEventArgs e)
         {
-
+            ImageBrush BackgroundBoardBrush = new ImageBrush();
+            BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon3.png", UriKind.Absolute));
+            GridBack2.Background = BackgroundBoardBrush;
+            Properties.Settings.Default.MainWindowBackgroundNumber = 3;
+            Properties.Settings.Default.Save();
         }
 
         private void Fon4_Click(object sender, RoutedEventArgs e)
         {
-
+            ImageBrush BackgroundBoardBrush = new ImageBrush();
+            BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
+            GridBack2.Background = BackgroundBoardBrush;
+            Properties.Settings.Default.MainWindowBackgroundNumber = 4;
+            Properties.Settings.Default.Save();
         }
     }
 }

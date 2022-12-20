@@ -19,7 +19,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Favourite" HorizontalAlignment="Left" Margin="363,29,0,0" VerticalAlignment="Top" Width="52" Height="52" Cursor="Hand" BorderBrush="Black">
+        <Button x:Name="Favourite" HorizontalAlignment="Left" Margin="363,29,0,0" VerticalAlignment="Top" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Click="Favourite_Click_1">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">

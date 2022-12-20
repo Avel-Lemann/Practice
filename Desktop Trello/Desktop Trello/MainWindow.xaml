@@ -14,7 +14,7 @@
         <Button x:Name="Favorites" Style="{StaticResource Favourites}" Click="Favorites_Click" Margin="0,-10,0,10"/>
         <Button x:Name="Frequently_Visited" Style="{StaticResource FreqVis}" Click="Frequently_Visited_Click"/>
         <Button x:Name="Logo" Style="{StaticResource Logo}" Click="Logo_Click"/>
-        <Grid Background="#F7EDEE" Margin="246,0,0,0">
+        <Grid x:Name="GridBack2" Background="#F7EDEE" Margin="246,0,0,0">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="543" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Добро пожаловать в Trello Desktop "/></TextBlock>
             <Canvas x:Name="Board_1" Margin="37,186,1121,656">
                 <Button x:Name="Board1" Background="White" HorizontalAlignment="Left" Height="135" VerticalAlignment="Top" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board1_Click" Canvas.Top="44">
@@ -97,7 +97,7 @@
                 </Button.Template>
                 <Image x:Name="Fon1Img" Source="/Resources/Fon1.png" Height="103"/>
             </Button>
-            <TextBlock HorizontalAlignment="Left" Margin="837,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="647" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="А тут вы можете поменять фон этого окна"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="731,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="647" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="А тут вы можете поменять фон этого окна"/></TextBlock>
             <Button x:Name="Fon2" Width="130" Height="111" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1096,242,0,0" Click="Fon2_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}" >
