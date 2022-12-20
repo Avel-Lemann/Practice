@@ -654,7 +654,7 @@ namespace Desktop_Trello
             }
             else
             {
-                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три списка. Приносим свои извенения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три списка. Приносим свои извинения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             
@@ -698,7 +698,7 @@ namespace Desktop_Trello
             }
             else
             {
-                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извенения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извинения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
         }
@@ -785,7 +785,7 @@ namespace Desktop_Trello
             }
             else
             {
-                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извенения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извинения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
         }
@@ -873,7 +873,7 @@ namespace Desktop_Trello
             }
             else
             {
-                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извенения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три карточки в одном списке. Приносим свои извинения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
         }

@@ -109,7 +109,7 @@ namespace Desktop_Trello
             }
             else if ((Properties.Settings.Default.QuantityBoard >= 3))
             {
-                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три доски.Приносим свои извенения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("К сожалению приложение в текущий момент поддерживает только три доски. Приносим свои извинения", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
         }
