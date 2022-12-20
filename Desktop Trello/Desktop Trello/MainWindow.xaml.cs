@@ -247,7 +247,6 @@ namespace Desktop_Trello
             GridBack2.Background = BackgroundBoardBrush;
             Properties.Settings.Default.MainWindowBackgroundNumber = 1;
             Properties.Settings.Default.Save();
-            Properties.Settings.Default.Reset();
 
         }
 

@@ -30,7 +30,7 @@
             </Button.Template>
             <Image x:Name="FavBut" Source="Resources/Serdechko_pustoe.png"/>
         </Button>
-        <Canvas x:Name="List1" Background="#f7edee" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1100,0,0,0" Height="600" RenderTransformOrigin="0.5,0.5" Width="436" Visibility="Hidden">
+        <Canvas x:Name="List1" Background="#f7edee" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="90,0,0,0" Height="600" RenderTransformOrigin="0.5,0.5" Width="436" Visibility="Hidden">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1"/>
@@ -155,7 +155,7 @@
                 </Button>
             </Canvas>
         </Canvas>
-        <Canvas x:Name="List3" Background="#f7edee" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="90,0,0,0" Height="600" RenderTransformOrigin="0.5,0.5" Width="436" Visibility="Hidden">
+        <Canvas x:Name="List3" Background="#f7edee" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1100,0,0,0" Height="600" RenderTransformOrigin="0.5,0.5" Width="436" Visibility="Hidden">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1"/>
