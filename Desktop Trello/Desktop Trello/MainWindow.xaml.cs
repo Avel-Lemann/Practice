@@ -198,7 +198,7 @@ namespace Desktop_Trello
             }
         }
 
-        private void Favourite_Copy1_Click(object sender, RoutedEventArgs e)
+        private void FavBoard3_Click(object sender, RoutedEventArgs e)
         {
             if (Properties.Settings.Default.Board3Favorites == true)
             {
@@ -212,6 +212,24 @@ namespace Desktop_Trello
             }
         }
 
-        
+        private void Fon1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Fon2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Fon3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Fon4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

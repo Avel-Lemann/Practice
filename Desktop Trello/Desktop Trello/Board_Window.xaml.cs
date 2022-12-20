@@ -157,7 +157,7 @@ namespace Desktop_Trello
                 }
                 else if (Properties.Settings.Default.BackgroundNumber1 == 2)
                 {
-                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
                 }
                 else if (Properties.Settings.Default.BackgroundNumber1 == 3)
                 {
@@ -293,7 +293,7 @@ namespace Desktop_Trello
                 }
                 else if (Properties.Settings.Default.BackgroundNumber2 == 2)
                 {
-                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
                 }
                 else if (Properties.Settings.Default.BackgroundNumber2 == 3)
                 {
@@ -423,7 +423,7 @@ namespace Desktop_Trello
                 }
                 else if (Properties.Settings.Default.BackgroundNumber3 == 2)
                 {
-                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                    BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
                 }
                 else if (Properties.Settings.Default.BackgroundNumber3 == 3)
                 {

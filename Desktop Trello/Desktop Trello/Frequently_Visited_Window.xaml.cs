@@ -29,5 +29,15 @@ namespace Desktop_Trello
         {
             MainWindow.freq_Visit = null;
         }
+
+        private void FrVisBoard1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FrVisBoard2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

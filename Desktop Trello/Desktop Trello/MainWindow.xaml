@@ -10,11 +10,10 @@
 
 
     <Grid Background="#8F97FC">
-        <Button x:Name="NewBoard" Style="{StaticResource NewBoard}" Click="NewBoard_Click" Margin="0,10,0,0"/>
-        <Button x:Name="Favorites" Style="{StaticResource Favourites}" Click="Favorites_Click" Margin="0,-46,0,46"/>
+        <Button x:Name="NewBoard" Style="{StaticResource NewBoard}" Click="NewBoard_Click" Margin="0,84,0,0"/>
+        <Button x:Name="Favorites" Style="{StaticResource Favourites}" Click="Favorites_Click" Margin="0,-10,0,10"/>
         <Button x:Name="Frequently_Visited" Style="{StaticResource FreqVis}" Click="Frequently_Visited_Click"/>
         <Button x:Name="Logo" Style="{StaticResource Logo}" Click="Logo_Click"/>
-
         <Grid Background="#F7EDEE" Margin="246,0,0,0">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="543" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Добро пожаловать в Trello Desktop "/></TextBlock>
             <Canvas x:Name="Board_1" Margin="37,186,1121,656">
@@ -28,7 +27,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="FavBoard1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Canvas.Left="440" Canvas.Top="85" Click="FavBoard1_Click">
+                <Button x:Name="FavBoard1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Canvas.Left="454" Canvas.Top="85" Click="FavBoard1_Click">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">
@@ -40,8 +39,8 @@
                     <Image x:Name="FavBoard1Img" Source="Resources/Serdechko_pustoe.png"/>
                 </Button>
             </Canvas>
-            <Canvas x:Name="Board_2" Margin="24,647,1134,194">
-                <Button x:Name="FavBoard2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Canvas.Left="441" Canvas.Top="85" Click="FavBoard2_Click">
+            <Canvas x:Name="Board_2" Margin="37,420,1121,420">
+                <Button x:Name="FavBoard2" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Click="FavBoard2_Click" HorizontalAlignment="Left" Canvas.Left="454" Canvas.Top="86" VerticalAlignment="Center">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">
@@ -52,19 +51,7 @@
                     </Button.Template>
                     <Image x:Name="FavBoard2Img" Source="/Resources/Serdechko_pustoe.png"/>
                 </Button>
-            </Canvas>
-            <Button x:Name="Board3" Background="White" HorizontalAlignment="Left" Height="135" Margin="24,691,0,0" VerticalAlignment="Top" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board3_Click">
-                <Button.Template >
-                    <ControlTemplate TargetType="{x:Type Button}" >
-                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
-                            <Border.Background>White</Border.Background>
-                            <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-            <Canvas x:Name="Board_3" Margin="37,408,1106,434">
-                <Button x:Name="Board2" Background="White" Height="134" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board2_Click" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button x:Name="Board2" Background="White" Height="134" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board2_Click" HorizontalAlignment="Left" Canvas.Top="45" VerticalAlignment="Top">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
@@ -74,8 +61,10 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="Favourite_Copy1" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" Canvas.Left="442" Canvas.Top="85" VerticalAlignment="Center" Click="Favourite_Copy1_Click">
-                    <Button.Template >
+            </Canvas>
+            <Canvas x:Name="Board_3" Margin="37,649,1121,193">
+                <Button x:Name="FavBoard3" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Click="FavBoard3_Click" HorizontalAlignment="Left" Canvas.Left="454" Canvas.Top="85" VerticalAlignment="Center">
+                    <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="11.5,11.5,11.5,11.5" Margin="12,-16,-13,16">
                                 <Border.Background>Transparent</Border.Background>
@@ -85,11 +74,64 @@
                     </Button.Template>
                     <Image x:Name="FavBoard3Img" Source="/Resources/Serdechko_pustoe.png"/>
                 </Button>
+                <Button x:Name="Board3" Background="White" Height="135" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board3_Click" HorizontalAlignment="Left" Canvas.Top="44" VerticalAlignment="Top">
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10,10,10,10" Margin="14,-11,-14,11">
+                                <Border.Background>White</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Canvas>
             <TextBlock HorizontalAlignment="Left" Margin="10,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="593" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Тут будут отображаться все ваши доски"/></TextBlock>
-
+            <Button x:Name="Fon1" Width="130" Height="111" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" Canvas.Left="454" Canvas.Top="85" VerticalAlignment="Top" Margin="812,241,0,0" Click="Fon1_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1"  Margin="36,-16,-89,24">
+                            <Border.Background>Transparent</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Image x:Name="Fon1Img" Source="/Resources/Fon1.png" Height="103"/>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="837,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="647" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="А тут вы можете поменять фон этого окна"/></TextBlock>
+            <Button x:Name="Fon2" Width="130" Height="111" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1096,242,0,0" Click="Fon2_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1"  Margin="36,-16,-89,24">
+                            <Border.Background>Transparent</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Image x:Name="Fon2Img" Source="/Resources/Fon2.png" Height="103"/>
+            </Button>
+            <Button x:Name="Fon3" Width="130" Height="111" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="812,420,0,0" Click="Fon3_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1"  Margin="36,-16,-89,24">
+                            <Border.Background>Transparent</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Image x:Name="Fon3Img" Source="/Resources/Fon3.png" Height="103"/>
+            </Button>
+            <Button x:Name="Fon4" Width="130" Height="111" Cursor="Hand" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1096,421,0,0" Click="Fon4_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1"  Margin="36,-16,-89,24">
+                            <Border.Background>Transparent</Border.Background>
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Image x:Name="Fon4Img" Source="/Resources/Fon4.png" Height="103"/>
+            </Button>
         </Grid>
-
     </Grid>
 </Window>
 

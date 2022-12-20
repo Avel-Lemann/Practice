@@ -65,7 +65,7 @@ namespace Desktop_Trello
                     }
                     else if (Background_Number == 2)
                     {
-                        BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon2.png", UriKind.Absolute));
+                        BackgroundBoardBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Resources/Fon4.png", UriKind.Absolute));
                         
                     }
                     else if (Background_Number == 3)

@@ -23,7 +23,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Button x:Name="Fon1" Margin="0,231,308,191" Background="White" BorderBrush="Black" Cursor="Hand">
-                        <Image Source="Resources/Fon1.png" Height="68" Width="104"/>
+                        <Image Source="Resources/Fon5.png" Height="68" Width="104"/>
                         <Button.Template >
                             <ControlTemplate TargetType="{x:Type Button}" >
                                 <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="0,0,0,0" Margin="14,-11,-36,-2">
@@ -50,7 +50,7 @@
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
-                        <Image Source="/Resources/Fon2.png" Height="68" Width="104"/>
+                        <Image Source="/Resources/Fon4.png" Height="68" Width="104"/>
                     </Button>
                 </ControlTemplate>
             </Setter.Value>

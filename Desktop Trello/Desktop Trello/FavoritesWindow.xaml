@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:Desktop_Trello"
         mc:Ignorable="d"
         Closing="FavoritesWindow_Closing"
-        Title="FavoritesWindow" Height="450" Width="450">
+        Title="FavoritesWindow" Height="450" Width="450" ResizeMode="NoResize">
     <Grid Background="#d9dbee">
+        <Border BorderBrush="White" BorderThickness="7"/>
         <Label Content="Избранные" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28"/>
         <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="190"/>
         <Button x:Name="FavBoard1" Background="White" HorizontalAlignment="Left" Height="76" Margin="89,111,0,0" VerticalAlignment="Top" Width="245" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Visibility="Hidden" Click="FavBoard1_Click">
