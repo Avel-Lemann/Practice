@@ -50,18 +50,18 @@ namespace Desktop_Trello
 
             if(Properties.Settings.Default.QuantityBoard == 3)
             {
-                Board1.Visibility = Visibility.Visible;
-                Board2.Visibility = Visibility.Visible;
-                Board3.Visibility = Visibility.Visible;
+                Board_1.Visibility = Visibility.Visible;
+                Board_2.Visibility = Visibility.Visible;
+                Board_3.Visibility = Visibility.Visible;
             }
             else if (Properties.Settings.Default.QuantityBoard == 2)
             {
-                Board1.Visibility = Visibility.Visible;
-                Board2.Visibility = Visibility.Visible;
+                Board_1.Visibility = Visibility.Visible;
+                Board_2.Visibility = Visibility.Visible;
             }
             else if (Properties.Settings.Default.QuantityBoard == 1)
             {
-                Board1.Visibility = Visibility.Visible;
+                Board_1.Visibility = Visibility.Visible;
             }
 
             if (Properties.Settings.Default.Board1Favorites == true)

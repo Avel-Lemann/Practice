@@ -16,7 +16,7 @@
         <Button x:Name="Logo" Style="{StaticResource Logo}" Click="Logo_Click"/>
         <Grid x:Name="GridBack2" Background="#F7EDEE" Margin="246,0,0,0">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="543" FontSize="30" FontFamily="Comic Sans MS"><Run Language="ru-ru" Text="Добро пожаловать в Trello Desktop "/></TextBlock>
-            <Canvas x:Name="Board_1" Margin="37,186,1121,656">
+            <Canvas x:Name="Board_1" Margin="37,186,1121,656" Visibility="Hidden">
                 <Button x:Name="Board1" Background="White" HorizontalAlignment="Left" Height="135" VerticalAlignment="Top" Width="418" FontSize="18" FontFamily="Comic Sans MS" Cursor="Hand" Click="Board1_Click" Canvas.Top="44">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -39,7 +39,7 @@
                     <Image x:Name="FavBoard1Img" Source="Resources/Serdechko_pustoe.png"/>
                 </Button>
             </Canvas>
-            <Canvas x:Name="Board_2" Margin="37,420,1121,420">
+            <Canvas x:Name="Board_2" Margin="37,420,1121,420" Visibility="Hidden">
                 <Button x:Name="FavBoard2" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Click="FavBoard2_Click" HorizontalAlignment="Left" Canvas.Left="454" Canvas.Top="86" VerticalAlignment="Center">
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
@@ -62,7 +62,7 @@
                     </Button.Template>
                 </Button>
             </Canvas>
-            <Canvas x:Name="Board_3" Margin="37,649,1121,193">
+            <Canvas x:Name="Board_3" Margin="37,649,1121,193" Visibility="Hidden">
                 <Button x:Name="FavBoard3" Width="52" Height="52" Cursor="Hand" BorderBrush="Black" Click="FavBoard3_Click" HorizontalAlignment="Left" Canvas.Left="454" Canvas.Top="85" VerticalAlignment="Center">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}" >
