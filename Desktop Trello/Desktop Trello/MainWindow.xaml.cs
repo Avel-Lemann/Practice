@@ -46,6 +46,8 @@ namespace Desktop_Trello
             Board2.Content = Properties.Settings.Default.BoardName2;
             Board3.Content = Properties.Settings.Default.BoardName3;
 
+            
+
             if(Properties.Settings.Default.QuantityBoard == 3)
             {
                 Board1.Visibility = Visibility.Visible;
@@ -64,6 +66,21 @@ namespace Desktop_Trello
                 Board1.Visibility = Visibility.Visible;
                 return;
             }
+
+            if (Properties.Settings.Default.Board1Favorites == true)
+                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            else
+                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+
+            if(Properties.Settings.Default.Board2Favorites == true)
+                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            else
+                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+
+            if (Properties.Settings.Default.Board3Favorites == true)
+                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            else
+                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
         }
 
 
@@ -102,20 +119,17 @@ namespace Desktop_Trello
 
         private void Favorites_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.Reset();
             if (favorites == null)
             {
                 favorites = new FavoritesWindow();
-                favorites.Show();
-            }
-            else
-            {
-                favorites.Activate();
+                favorites.Owner = this;
+                favorites.ShowDialog();
             }
         }
 
         private void Frequently_Visited_Click(object sender, RoutedEventArgs e)
         {
+            Properties.Settings.Default.Reset();
             if (freq_Visit == null)
             {
                 freq_Visit = new Frequently_Visited_Window();
@@ -155,5 +169,49 @@ namespace Desktop_Trello
             Board_Window.Show();
             this.Close();
         }
+
+        private void FavBoard1_Click(object sender, RoutedEventArgs e)
+        {
+            if(Properties.Settings.Default.Board1Favorites == true)
+            {
+                Properties.Settings.Default.Board1Favorites = false;
+                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            }
+            else
+            {
+                Properties.Settings.Default.Board1Favorites = true;
+                FavBoard1Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            }
+        }
+
+        private void FavBoard2_Click(object sender, RoutedEventArgs e)
+        {
+            if (Properties.Settings.Default.Board2Favorites == true)
+            {
+                Properties.Settings.Default.Board2Favorites = false;
+                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            }
+            else
+            {
+                Properties.Settings.Default.Board2Favorites = true;
+                FavBoard2Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            }
+        }
+
+        private void Favourite_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            if (Properties.Settings.Default.Board3Favorites == true)
+            {
+                Properties.Settings.Default.Board3Favorites = false;
+                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_pustoe.png", UriKind.Absolute)));
+            }
+            else
+            {
+                Properties.Settings.Default.Board3Favorites = true;
+                FavBoard3Img.Source = (new BitmapImage(new Uri("pack://application:,,,/Resources/Serdechko_zapolnennoe.png", UriKind.Absolute)));
+            }
+        }
+
+        
     }
 }

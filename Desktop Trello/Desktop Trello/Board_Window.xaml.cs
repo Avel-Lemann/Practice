@@ -171,6 +171,10 @@ namespace Desktop_Trello
                 BoardFovarites = Properties.Settings.Default.Board1Favorites;
                 ListQuantity = Properties.Settings.Default.Board1ListQuantity;
 
+                List1Name = Properties.Settings.Default.Board1List1Name;
+                List2Name = Properties.Settings.Default.Board1List2Name;
+                List3Name = Properties.Settings.Default.Board1List3Name;
+
                 QuantityCardsList1 = Properties.Settings.Default.Board1List1CardQuantity;
                 QuantityCardsList2 = Properties.Settings.Default.Board1List2CardQuantity;
                 QuantityCardsList3 = Properties.Settings.Default.Board1List3CardQuantity;
@@ -298,6 +302,10 @@ namespace Desktop_Trello
 
                 ListQuantity = Properties.Settings.Default.Board1ListQuantity;
 
+                List1Name = Properties.Settings.Default.Board2List1Name;
+                List2Name = Properties.Settings.Default.Board2List2Name;
+                List3Name = Properties.Settings.Default.Board2List3Name;
+
                 QuantityCardsList1 = Properties.Settings.Default.Board2List1CardQuantity;
                 QuantityCardsList2 = Properties.Settings.Default.Board2List2CardQuantity;
                 QuantityCardsList3 = Properties.Settings.Default.Board2List3CardQuantity;
@@ -424,6 +432,10 @@ namespace Desktop_Trello
 
                 ListQuantity = Properties.Settings.Default.Board1ListQuantity;
 
+                List1Name = Properties.Settings.Default.Board3List1Name;
+                List2Name = Properties.Settings.Default.Board3List2Name;
+                List3Name = Properties.Settings.Default.Board3List3Name;
+
                 QuantityCardsList1 = Properties.Settings.Default.Board3List1CardQuantity;
                 QuantityCardsList2 = Properties.Settings.Default.Board3List2CardQuantity;
                 QuantityCardsList3 = Properties.Settings.Default.Board3List3CardQuantity;
@@ -547,7 +559,7 @@ namespace Desktop_Trello
         private void NewList_Click(object sender, RoutedEventArgs e)
         {
 
-            if(ListQuantity <= 3)
+            if(ListQuantity <= 2)
             {
                 if(ListQuantity == 0)
                 {
@@ -561,7 +573,7 @@ namespace Desktop_Trello
 
                 if (ListQuantity == 1)
                 {
-                    if(ListName.Text != List1Name)
+                    if (ListName.Text != List1Name)
                     {
                         List2.Visibility = Visibility.Visible;
                         Header2.Text = ListName.Text;
@@ -569,14 +581,14 @@ namespace Desktop_Trello
                         ListQuantity++;
                         return;
                     }
-                    else
+                    else if (ListName.Text == List1Name) 
                     { 
                         if (MessageBox.Show("Название нового списка совпадает с уже созданым", "Предупреждение", MessageBoxButton.OKCancel,MessageBoxImage.Question) == MessageBoxResult.OK)
                         {
                             List2.Visibility = Visibility.Visible;
                             Header2.Text = ListName.Text;
                             List2Name = ListName.Text;
-                            
+                            ListQuantity++;
                             return;
                         }
                         else
